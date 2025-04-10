@@ -22,4 +22,18 @@ public class EjerciciosRecursivos {
          */
         return n + sumaConsecutivos(n-1);
     }
-}
+
+    /**
+     * Escribe una funcion recursiva que calcule la potencia de un número base elevado a un exponente entero exponente.
+     * Por ejemplo, si base es 2 y exponente es 3, la función debe devolver 2^3=8
+     * 2*2*2=8
+     */
+    public int getPotencia(int base, int exponente){
+        if ( exponente < 0 ) { return -1 ; 
+            // Manejo de errores para exponentes negativos 
+            } if ( exponente == 0 ) { return 1 ; 
+            // Caso base: cualquier número elevado a la potencia de 0 es 1 
+            } 
+            return base * getPotencia( base , exponente - 1 ); } 
+
+    }

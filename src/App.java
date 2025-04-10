@@ -9,6 +9,9 @@ public class App {
         
         System.out.println(eR.fibonacci(n));
         System.out.println(eR.sumaConsecutivos(n));
+////////////////////////////////----------------------------------------
+        int base=2, potencia=3;
+        System.out.println("Potencia= "+eR.getPotencia(base, n));
     }
 
 
@@ -25,4 +28,6 @@ public class App {
         System.out.println("Calculando Factorian de: "+n+" * factorial ( "+ (n-1)+" - 1 )");
         return resultado;
     }
+
+
 }
