@@ -5,14 +5,19 @@ public class App {
         // System.out.println("Factorial de "+n+" es "+resultafoFinal);
         EjerciciosRecursivos eR = new EjerciciosRecursivos();
         
-        System.out.println("Fibonaci: "+eR.fibonacci(n));
-        System.out.println("Numeros Consecutivos: "+eR.sumaConsecutivos(n));
+        System.out.println("\nEJERCICIO 1 FIBONACI: "+n);
+        System.out.println("Respuesta: "+eR.fibonacci(n));
+
+        System.out.println("\nEJERCICIO 2 NUMEROS CONSECUTIVOS: "+n);
+        System.out.println("Respuesta: "+eR.sumaConsecutivos(n));
 ////////////////////////////////----------------------------------------
-        int base=2, potencia=5;
-        System.out.println("Potencia de un Numero: "+eR.getPotencia(base, potencia));
+        int base=2, potencia=3;
+        System.out.println("\nEJERCICIO 3 POTENCIA DE UN NUMERO: base: "+base+" potencia: "+potencia);
+        System.out.println("Respuesta: "+eR.getPotencia(base, potencia));
 
 
         int digi=125;
+        System.out.println("\nEJERCICIO 4 SUMA DE DIGITOS "+digi);
         System.out.println(digi+" Suma Digitos: "+eR.getDigitos(digi));
 
     }
