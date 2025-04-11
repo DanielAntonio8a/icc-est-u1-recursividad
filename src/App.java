@@ -1,5 +1,3 @@
-import java.nio.channels.Pipe.SourceChannel;
-
 public class App {
     public static void main(String[] args) throws Exception {
         int n=5;
@@ -7,11 +5,16 @@ public class App {
         // System.out.println("Factorial de "+n+" es "+resultafoFinal);
         EjerciciosRecursivos eR = new EjerciciosRecursivos();
         
-        System.out.println(eR.fibonacci(n));
-        System.out.println(eR.sumaConsecutivos(n));
+        System.out.println("Fibonaci: "+eR.fibonacci(n));
+        System.out.println("Numeros Consecutivos: "+eR.sumaConsecutivos(n));
 ////////////////////////////////----------------------------------------
-        int base=2, potencia=3;
-        System.out.println("Potencia= "+eR.getPotencia(base, n));
+        int base=2, potencia=5;
+        System.out.println("Potencia de un Numero: "+eR.getPotencia(base, potencia));
+
+
+        int digi=125;
+        System.out.println(digi+" Suma Digitos: "+eR.getDigitos(digi));
+
     }
 
 

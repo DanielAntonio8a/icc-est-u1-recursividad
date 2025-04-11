@@ -29,11 +29,32 @@ public class EjerciciosRecursivos {
      * 2*2*2=8
      */
     public int getPotencia(int base, int exponente){
-        if ( exponente < 0 ) { return -1 ; 
-            // Manejo de errores para exponentes negativos 
-            } if ( exponente == 0 ) { return 1 ; 
-            // Caso base: cualquier número elevado a la potencia de 0 es 1 
-            } 
-            return base * getPotencia( base , exponente - 1 ); } 
+        // if ( exponente < 0 ) { 
+        //   return -1 ; 
+        //     // Manejo de errores para exponentes negativos 
+        //     } if ( exponente == 0 ) { return 1 ; 
+        //     // Caso base: cualquier número elevado a la potencia de 0 es 1 
+        //     } 
+        //     return base * getPotencia( base , exponente - 1 ); 
+        if (exponente == 0) {
+            return 1;
+        } else {
+            return base * getPotencia( base,exponente - 1); 
+        }
+
+        } 
+
+        /*Suma de diitos de un numero:
+         * Si el numero es menor que 10, lo cual significa que solo tiene un digito utilizado el operador modulo %
+         * y se calcul el los digitos menos el ultimo utilizando la division entera /10. Luego, se realiza una llamada
+         * recursiva a sumaDigitos con el resto y se suma el ultimo digito
+         */
+
+    public int getDigitos(int digi){
+        if (digi==0){
+            return digi;
+        }
+        return (digi%10)+getDigitos(digi/10);
+    }
 
     }
