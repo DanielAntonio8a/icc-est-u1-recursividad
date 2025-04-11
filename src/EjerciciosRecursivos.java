@@ -49,4 +49,33 @@ public class EjerciciosRecursivos {
         return (digi%10)+getDigitos(digi/10);
     }
 
+ 
+    public int getDescendente(int num) {
+        if (num == 0) {
+            return num;
+        }
+        System.out.print(num + " ");
+        getDescendente(num - 1);  // Llamada recursiva con el siguiente número menor.
+        return 1;
+    }
+    
+
+
+     /*
+      * Crea una funcion  recursiva llamada reverso que reciba un numero entero positivo n
+       y devuelva su numero invertido.
+       Por ejemplo, si se recibe 1234, la funcion debe devolver 4321
+      */
+
+      public int getInvertir(int nu) {
+        if (nu < 10) {
+            return nu;
+        } else {
+            // Devolvemos el último dígito seguido de la inversión del resto del número
+            return (nu%10)*(int) Math.pow(10,(int) Math.log10(nu))+getInvertir(nu/10);
+        }
+    }
+
+
+
     }

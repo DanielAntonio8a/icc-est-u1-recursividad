@@ -20,6 +20,14 @@ public class App {
         System.out.println("\nEJERCICIO 4 SUMA DE DIGITOS "+digi);
         System.out.println(digi+" Suma Digitos: "+eR.getDigitos(digi));
 
+        int num= 10;
+        System.out.println("\nEJERCICIO 5 NUMEROS DESCENDENTES: "+num);
+        System.out.println("\nRespuesta: "+eR.getDescendente(num));
+
+        int nu=1234;
+        System.out.println("\nEJERCICIO 6 NUMEROS INVERTIDOS: "+nu);
+        System.out.println("Respuesta: " +eR.getInvertir(nu));
+
     }
 
 
